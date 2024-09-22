@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIC Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">CIC ACADEMY</div>
+
+    <ul class="pdf-list">
+        <li><a href="https://cicacademytext.github.io/PDF10/">第７章</a></li>
+        <li><a href="https://cicacademytext.github.io/PDF11/">第８章</a></li>
+   
+    </ul>
+
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2>利用規約</h2>
+            <p>ここに利用規約の内容。</p>
+            <div class="modal-buttons">
+                <button id="acceptTerms">同意する</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        window.onload = function() {
+            document.getElementById('termsModal').style.display = 'flex';
+        };
+
+        
+        document.getElementById('acceptTerms').onclick = function() {
+            document.getElementById('termsModal').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
